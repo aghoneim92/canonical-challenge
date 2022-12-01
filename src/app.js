@@ -20,8 +20,12 @@ function getTerms(termGroups) {
 }
 
 function formatDate(date) {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  return new Date(date).toLocaleDateString('en-US', options);
+  const options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
+  return new Date(date).toLocaleDateString('en-GB', options);
 }
 
 fetch('https://people.canonical.com/~anthonydillon/wp-json/wp/v2/posts.json')
