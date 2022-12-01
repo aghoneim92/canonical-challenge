@@ -1,0 +1,28 @@
+@import 'vanilla-framework';
+@include vanilla;
+
+.blog-card {
+  border-top: 5px solid rgb(162, 126, 158);
+  border-radius: 5px;
+}
+
+.topic {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  height: 32px;
+}
+
+.separator {
+  background-color: transparent;
+  border-top: 1px dotted rgb(0, 0, 0, 0.15);
+}
+
+.title {
+  font-weight: 500;
+  height: 100px;
+}
+
+// Needed to override the default Vanilla styles
+[class*='p-card'] > h6:last-child.author {
+  margin-bottom: 1rem;
+}
